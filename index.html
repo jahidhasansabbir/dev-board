@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Tailwind & DaisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DevBoard</title>
 </head>
-<body>
-    
+<body class="bg-slate-300 min-h-screen pt-4">
+    <header class="w-11/12 mx-auto max-w-[1440px]">
+        <nav class="">
+            <div class="navbar bg-base-100 rounded-xl justify-between items-center">
+                <div>
+                    <img src="assets/logo.png" alt="" class="w-12 h-12">
+                  <a class="btn btn-ghost text-3xl -ml-3">Dev<span class="font-bold -ml-2">Board</span></a>
+                </div>
+                <div class="flex justify-center items-center gap-4">
+                    <div class="flex items-center justify-center gap-4 bg-[#F4F7FF] p-3 rounded-full">
+                        <img src="assets/checkbox.png" alt="" class="w-8 h-8">
+                        <h4 class="text-3xl font-bold">23</h4>
+                    </div>
+                  <button >
+                    <div class="bg-[#F4F7FF] w-16 h-16 flex justify-center items-center rounded-full">
+                        <img src="assets/theme-btn.png" alt="" class="w-10 h-10">
+                    </div>
+                  </button>
+                </div>
+              </div>
+        </nav>
+    </header>
 </body>
+
 </html>
