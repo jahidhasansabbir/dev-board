@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <title>DevBoard</title>
   <style>
-    .btn:hover{
+    .btn:hover {
       background-color: #3752FD;
     }
   </style>
@@ -28,7 +28,7 @@
             <img src="assets/checkbox.png" alt="" class="w-8 h-8">
             <h4 class="text-3xl font-bold" id="task-count">23</h4>
           </div>
-          <button>
+          <button id="theme-btn">
             <div class="bg-[#F4F7FF] w-16 h-16 flex justify-center items-center rounded-full">
               <img src="assets/theme-btn.png" alt="" class="w-10 h-10">
             </div>
@@ -56,12 +56,11 @@
               </div>
             </div>
             <!-- middle -->
-            <div
-              class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
+            <div class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
               <a href="blogs.html" class="flex justify-start items-center gap-4  px-8 py-6">
-              <img src="assets/board.png" alt="" class="w-20 h-20">
-              <h4 class="text-xl font-medium text-white">Discover Something <br>New Today!</h4>
-            </a>
+                <img src="assets/board.png" alt="" class="w-20 h-20">
+                <h4 class="text-xl font-medium text-white">Discover Something <br>New Today!</h4>
+              </a>
             </div>
             <!-- right -->
             <div class="bg-[#F4F7FF] rounded-xl flex justify-start items-center px-2 py-6 gap-2">
@@ -69,104 +68,107 @@
                 <img src="assets/calender.png" class="w-8 h-8">
               </div>
               <div>
-                <p class="font-medium text-xl">Wed ,</p>
+                <p class="font-medium text-xl"><span id="day"></span>,</p>
                 <h4 class="text-xl font-bold">
-                  Jul 28 2025</h4>
+                  <span id="month"></span>
+                  <span id="date"></span>
+                  <span id="year"></span>
+                </h4>
               </div>
             </div>
           </div>
           <!-- Lower section -->
           <div class="p-4 pt-8 grid grid-cols-3 gap-4">
-              <!-- card-1 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
+            <!-- card-1 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
-              <!-- card-2 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue-2</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD]  disabled:bg-[#3751fd34]">Completed</button>
+            </div>
+            <!-- card-2 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue-2</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD]  disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
-              <!-- card-3 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
+            </div>
+            <!-- card-3 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
-              <!-- card-4 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue-3</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
+            </div>
+            <!-- card-4 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue-3</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
-              <!-- card-5 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue-4</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
+            </div>
+            <!-- card-5 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue-4</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
-              <!-- card-6 -->
-              <div class="card bg-[#F4F7FF]">
-                <div class="card-body">
-                    <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
-                  <h2 class="card-title">Fix Mobile Button Issue-5</h2>
-                  <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions flex justify-between">
-                    <div>
-                      <p>Deadline</p>
-                      <h4 class="font-medium">21 March 2025</h4>
-                    </div>
-                    <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
+            </div>
+            <!-- card-6 -->
+            <div class="card bg-[#F4F7FF]">
+              <div class="card-body">
+                <h4 class="bg-white px-3 py-2 rounded-lg max-w-24">ShopEase</h4>
+                <h2 class="card-title">Fix Mobile Button Issue-5</h2>
+                <p class="bg-white p-3 rounded-lg text-gray-400">If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions flex justify-between">
+                  <div>
+                    <p>Deadline</p>
+                    <h4 class="font-medium">21 March 2025</h4>
                   </div>
+                  <button class="btn text-white completed bg-[#3752FD] disabled:bg-[#3751fd34]">Completed</button>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <!-- Aside -->
@@ -178,7 +180,7 @@
           <div class="text-center mt-4 border-b-2 border-dashed pb-2 border-[#3751fd13]">
             <button class="btn text-white bg-[#3752FD]" id="clear-history-btn">Clear History</button>
           </div>
-          <div  id="activity-log">
+          <div id="activity-log">
           </div>
         </div>
       </div>
