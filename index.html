@@ -26,7 +26,7 @@
         <div class="flex justify-center items-center gap-4">
           <div class="flex items-center justify-center gap-4 bg-[#F4F7FF] p-3 rounded-full">
             <img src="assets/checkbox.png" alt="" class="w-8 h-8">
-            <h4 class="text-3xl font-bold">23</h4>
+            <h4 class="text-3xl font-bold" id="task-count">23</h4>
           </div>
           <button>
             <div class="bg-[#F4F7FF] w-16 h-16 flex justify-center items-center rounded-full">
@@ -58,7 +58,7 @@
             <!-- middle -->
             <div
               class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl">
-              <a href="blogs.html" class="flex justify-center items-center gap-2  px-2 py-6">
+              <a href="blogs.html" class="flex justify-start items-center gap-4  px-8 py-6">
               <img src="assets/board.png" alt="" class="w-20 h-20">
               <h4 class="text-xl font-medium text-white">Discover Something <br>New Today!</h4>
             </a>
@@ -176,10 +176,9 @@
             <h2 class="text-xl font-medium">Activity Log</h2>
           </div>
           <div class="text-center mt-4 border-b-2 border-dashed pb-2 border-[#3751fd13]">
-            <button class="btn text-white completed bg-[#3752FD]">Clear History</button>
+            <button class="btn text-white bg-[#3752FD]" id="clear-history-btn">Clear History</button>
           </div>
           <div  id="activity-log">
-            
           </div>
         </div>
       </div>

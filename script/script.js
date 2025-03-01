@@ -1,5 +1,6 @@
 const completedBtns = document.querySelectorAll(".completed");
 let taskAssigned = parseInt(document.getElementById("task-assigned").innerText);
+let taskCount = parseInt(document.getElementById('task-count').innerText);
 
 for (btn of completedBtns) {
   btn.addEventListener("click", function (e) {
@@ -11,7 +12,9 @@ for (btn of completedBtns) {
     // alert('Board updated Successfully');
     e.target.disabled = true;
     taskAssigned--;
+    taskCount++;
     document.getElementById("task-assigned").innerText = taskAssigned;
+    document.getElementById('task-count').innerText = taskCount;
     const cardTitle =
       e.target.parentNode.parentNode.childNodes[2].nextSibling.innerText;
     const div = document.createElement("div");
@@ -19,6 +22,9 @@ for (btn of completedBtns) {
         <p class="p-3 rounded-lg bg-[#F4F7FF] ml-7 mr-4 my-6">You have Complete The Task ${cardTitle} at ${hr}:${min}:${sec} ${amPm}</p>
         `;
     document.getElementById("activity-log").appendChild(div);
-    console.log(div.innerText);
   });
 }
+
+document.getElementById('clear-history-btn').addEventListener('click', function(){
+    document.getElementById('activity-log').innerText = '';
+})
