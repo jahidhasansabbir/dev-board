@@ -26,45 +26,57 @@
     </header>
     <main class="w-11/12 mx-auto max-w-[1440px]">
         <section class="pb-8">
+            <h2 class="text-4xl font-bold text-center my-4">Blogs</h2>
             <!-- question-1 -->
             <div class="card bg-white rounded-lg mt-4">
                 <h2 class="card-title  p-4 pb-0">Question-1: What are the different ways to select an element in the
                     DOM?</h2>
                 <div class="h-1 border-b-2 border-dashed pt-3"></div>
-                <p class=" p-4 pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    repellendus voluptatem officiis itaque odit nesciunt minus, quidem officia esse ducimus. Dolore?
+                <p class=" p-4 pt-3 text-gray-500">There are 5 ways to select an element in the DOM. These are: <br>
+                    <span class="font-bold">1.Class selector:</span> Using the class name the element can be selected. <br> example: <span class="text-red-500">document</span><span class="text-green-500">.getElementsByClassName</span><span class="text-purple-500">('Class-Name')</span><br>
+                    <span class="font-bold">2.Id selector:</span> Using the id name the element can be selected. <br> example: <span class="text-red-500">document</span><span class="text-green-500">.getElementById</span><span class="text-purple-500">('Id-Name')</span><br>
+                   <span class="font-bold">3.Query Selector:</span> Using the id and class name the element can be selected. It will give only the first element. <br> example: <span class="text-red-500">document</span><span class="text-green-500">.querySelector</span><span class="text-purple-500">(".class-name or #id-name")</span><br>
+                    <span class="font-bold">4.Query Selector All:</span> Using the id and class name the element can be selected. It will give the set of all elements. <br> example: <span class="text-red-500">document</span><span class="text-green-500">.querySelectorAll</span><span class="text-purple-500">(".class-name or #id-name")</span><br>
+                    <span class="font-bold">5.Tag Selector:</span> Using the tag name the element can be selected. It will give the set of all elements. <br> example: <span class="text-red-500">document</span><span class="text-green-500">.getElementsByTagName</span><span class="text-purple-500">("Tag-Name")</span><br>
                 </p>
             </div>
             <!-- question-2 -->
             <div class="card bg-white rounded-lg mt-4">
                 <h2 class="card-title  p-4 pb-0">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
                 <div class="h-1 border-b-2 border-dashed pt-3"></div>
-                <p class=" p-4 pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    repellendus voluptatem officiis itaque odit nesciunt minus, quidem officia esse ducimus. Dolore?
+                <p class=" p-4 pt-3 text-gray-500">
+                    <span class="font-bold">innerHTML:</span> It is the property to set the element into a HTML tag.
+                    <span class="font-bold">innerText:</span> It is the property to set the text content into a HTML tag.
+                    <span class="font-bold">innerText:</span> It is the property to get and set the text content into a HTML tag.
                 </p>
+                
             </div>
             <!-- question-3 -->
             <div class="card bg-white rounded-lg mt-4">
                 <h2 class="card-title  p-4 pb-0">Question-3: What is event delegation in the DOM?</h2>
                 <div class="h-1 border-b-2 border-dashed pt-3"></div>
-                <p class=" p-4 pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    repellendus voluptatem officiis itaque odit nesciunt minus, quidem officia esse ducimus. Dolore?
+                <p class=" p-4 pt-3 text-gray-500">Event delegation is a technique to capture an event by using the parent.For example, we have 3 items of order list. We set an event listener on the parent tag ul. When any item of the ul is clicked, we can easily find item by using the event delegation technique.
                 </p>
             </div>
             <!-- question-4 -->
             <div class="card bg-white rounded-lg mt-4">
                 <h2 class="card-title  p-4 pb-0">Question-4: What is event bubbling in the DOM?</h2>
                 <div class="h-1 border-b-2 border-dashed pt-3"></div>
-                <p class=" p-4 pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    repellendus voluptatem officiis itaque odit nesciunt minus, quidem officia esse ducimus. Dolore?
+                <p class=" p-4 pt-3 text-gray-500">
+                    Event bubble is the technique of DOM. It means when an event is occurred the event bubble up from the target element to child element.
                 </p>
             </div>
-            <!-- question-1 -->
+            <!-- question-5 -->
             <div class="card bg-white rounded-lg mt-4">
                 <h2 class="card-title  p-4 pb-0">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
                 <div class="h-1 border-b-2 border-dashed pt-3"></div>
-                <p class=" p-4 pt-3 text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                    repellendus voluptatem officiis itaque odit nesciunt minus, quidem officia esse ducimus. Dolore?
+                <p class=" p-4 pt-3 text-gray-500">
+                    <span class="font-bold">Create element:</span> Using createElement() will help to create HTML element. <br> example:<span class="text-red-500">const </span><span class="text-blue-500">div</span>=<span class="text-red-500">document</span><span class="text-green-500">createElement</span><span class="text-purple-500">('div')</span><br>
+
+                    <span class="font-bold">Add element:</span> Using appendChild() the HTML element can be added. <br> example:<span class="text-blue-500">Parent-Node</span><span class="text-green-500">.appendChild</span><span class="text-purple-500">('div')</span><br>
+
+                    <span class="font-bold">Remove element:</span> Using removeChild() the HTML element can be added. <br> example:<span class="text-blue-500">Parent-Node</span><span class="text-red-500">.removeChild</span><span class="text-purple-500">('Child-Name')</span><br>
+                    
                 </p>
             </div>
         </section>
