@@ -1,1 +1,0 @@
-I want you to write me a vba code for a PowerPoint presentation about the Operational amplifier. You need to fill in all the text with your knowledge also don't include any place holders. I need 12 slides
